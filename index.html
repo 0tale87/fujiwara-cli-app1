@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Web APIを使ったアプリ</title>
-    </head>
-    <body>
-        <h1>Web APIを使ったアプリ（提出用）</h1>
-
-        <!-- ボタン -->
-        <button id="main">Get</button>
-
-        <!-- 処理後のDOMを表示する -->
-        <div id="result"></div>
-
-        <script src="index.js"></script>
-    </body>
+<!doctype html>
+<html>
+  <head>
+    <title>Search</title>
+  </head>
+  <body>
+    <div id="buttons">
+      <label> <input id="query" value='cats' type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
+    </div>
+    <div id="search-container">
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="youtube.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+  </body>
 </html>
